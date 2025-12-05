@@ -1,0 +1,3 @@
+﻿  Iaimpich.cpp
+C:\Users\BAZA PC\source\repos\Iaimpich\Iaimpich.cpp(10,29): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  Iaimpich.vcxproj -> C:\Users\BAZA PC\source\repos\Iaimpich\x64\Debug\Iaimpich.exe
