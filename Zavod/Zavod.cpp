@@ -164,12 +164,13 @@ public:
     vector<PowerTool> getTools() const { return Tools; }
 
     void saveWorkshopToFile(const string& filename) {
-        std::ofstream file(filename);
+        std::ofstream file(filename, std::ios::app);
         file << WorkshopName << "\n";
         file << InventoryDay << "\n";
         for (PowerTool& tool : Tools) {
             file << tool.toText() << "\n";
         }
+        
         file.close();
     }
 
@@ -238,3 +239,4 @@ int main()
     Workshop Factory1load = Factory1.loadWorkshopFromFile("input.txt");
     std::cout << Factory1load.toText() << "\n";
 }
+
